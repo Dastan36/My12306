@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <ListView
+        android:id="@+id/lvMyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="180dp"></ListView>
+    <!--<Button-->
+    <!--android:id="@+id/btnContact"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="我的联系人"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="30sp"-->
+    <!--android:background="@color/blue"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/btnAccount"-->
+    <!--android:layout_below="@id/btnContact"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="我的账户"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--android:textSize="30sp"-->
+    <!--android:background="@color/blue"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/btnPsw"-->
+    <!--android:layout_below="@id/btnAccount"-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="我的密码"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--android:textSize="30sp"-->
+    <!--android:background="@color/blue"/>-->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号退出"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/orange"/>
+
+</RelativeLayout>

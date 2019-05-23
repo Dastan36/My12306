@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neusoft.my12306">
+    <!-- 申请网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 访问电话权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".receiver.BroadCastActivity">
+
+        </activity>
+        <activity android:name=".myservice.ServiceActivity">
+
+        </activity>
+
+        <service
+            android:name=".myservice.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".advice.NotificationActivity"></activity>
+        <activity android:name=".order.Order3Activity" />
+        <activity android:name=".order.Order2Activity" />
+        <activity android:name=".order.Order1Activity" />
+        <activity android:name=".ticket.TicketsBook6Activity" />
+        <activity android:name=".ticket.TicketsBook5Activity" />
+        <activity android:name=".ticket.TicketsBook4Activity" />
+        <activity
+            android:name=".ticket.TicketsBook3Activity"
+            android:label="车票预订2/5" />
+        <activity
+            android:name=".ticket.TicketsBook2Activity"
+            android:label="车票预订3/5" />
+        <activity
+            android:name=".ticket.TicketsBook1Activity"
+            android:label="车票预订1/5" />
+        <activity android:name=".stations.ListStationsActivity" />
+        <activity
+            android:name=".my.ContactsAddActivity"
+            android:label="添加页面" />
+        <activity
+            android:name=".my.ContactEditActivity"
+            android:label="修改页面" />
+        <activity
+            android:name=".my.PswActivity"
+            android:label="我的密码" />
+        <activity
+            android:name=".my.AccountActivity"
+            android:label="我的账号" />
+        <activity
+            android:name=".my.ContactsActivity"
+            android:label="我的联系人" />
+        <activity
+            android:name=".MyActivity"
+            android:label="我的主页">
+            <intent-filter>
+                <action android:name="action.MyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="category.MyActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <!-- 注册广播接收器 -->
+        <receiver android:name=".receiver.SelfReceiver">
+            <intent-filter>
+                <action android:name="com.neusoft.action.DemoAction" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

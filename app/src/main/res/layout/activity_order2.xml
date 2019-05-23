@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.Order2Activity"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="您的订单编号为2019ZXC"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="您可以现在办理退票或改签！"
+        android:textColor="@color/orange"/>
+
+    <ListView
+        android:id="@+id/lvOrder2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"></ListView>
+
+    <Button
+        android:id="@+id/btnChanKan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看二维码"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:textSize="28sp"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ticket.TicketsBook5Activity"
+    android:paddingTop="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tvList1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单支付成功，您的订单编号是：20100KK"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tvList2"
+            android:layout_below="@id/tvList1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/orange"
+            android:text="您可以现在支付，或暂不支付，待返回后在订单中支付！"/>
+         </LinearLayout>
+
+    <ListView
+
+        android:layout_weight="1"
+        android:id="@+id/lvOrderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btnUnpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂不支付"
+            android:textColor="@color/white"
+            android:background="@color/blue"/>
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认支付"
+            android:textColor="@color/white"
+            android:background="@color/orange"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--相对的布局-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp">
+    <!-- 指定按钮宽 和 高度
+      android:layout_width
+      android:layout_height
+
+      match_parent 填充整个parent
+      wrap_content 包裹控件，根据字体大小进行包裹
+      layout_alignParentLeft  和父左边对齐
+      sp代表可以根据具体的来改，适应性好
+  -->
+    <ImageView
+        android:id="@+id/user_male4_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wkai"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/user_male4_50"
+        android:hint="@string/info"
+        android:drawableLeft="@drawable/administrator_25"
+        android:maxLines="1"
+        android:drawablePadding="8dp"/>
+    <requestFocus></requestFocus>
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edUserName"
+        android:layout_marginTop="35dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/lock_25"
+        android:drawablePadding="8dp"/>
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPassword"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_dl"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        
+        />
+    <CheckBox
+        android:id="@+id/cbCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ReLogin"
+        android:layout_below="@+id/BtnLogin"
+        android:layout_marginTop="35dp"
+        android:textSize="@dimen/comment_font"
+        android:checked="false"
+        android:layout_alignLeft="@+id/BtnLogin"/>
+    <TextView
+        android:id="@+id/tvForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FoLogin"
+        android:textSize="@dimen/comment_font"
+        android:layout_marginTop="35dp"
+        android:layout_alignRight="@+id/BtnLogin"
+        android:layout_below="@+id/BtnLogin"
+        android:layout_alignBaseline="@id/cbCheck"
+        />
+
+
+</RelativeLayout>
